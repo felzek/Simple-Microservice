@@ -15,4 +15,9 @@
 
 const Route = use('Route')
 
+const providers = [
+  '@adonisjs/framework/providers/ViewProvider'
+]
+
 Route.get('/', 'GameController.render')
+
