@@ -14,10 +14,17 @@
 */
 
 const Route = use('Route')
+const Database = use('Database')
 
 const providers = [
   '@adonisjs/framework/providers/ViewProvider'
 ]
 
 Route.get('/', 'GameController.render')
+
+
+
+Route.get('/posts', async () => {
+  return await Database.table('blog_posts').select('*')
+})
 
