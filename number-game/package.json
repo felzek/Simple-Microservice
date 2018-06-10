@@ -20,7 +20,9 @@
     "@adonisjs/fold": "^4.0.7",
     "@adonisjs/framework": "^5.0.5",
     "@adonisjs/ignitor": "^2.0.6",
-    "pg": "^7.4.3"
+    "@adonisjs/lucid": "^5.0.4",
+    "pg": "^7.4.3",
+    "sqlite3": "^4.0.0"
   },
   "autoload": {
     "App": "./app"
