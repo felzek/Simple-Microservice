@@ -22,6 +22,7 @@ const providers = [
 
 Route.get('/', 'GameController.render')
 
+Route.get('twitch/getTwitchUserInfo', 'TwitchController.getTwitchUserInfo')
 
 
 Route.get('/posts', async () => {
