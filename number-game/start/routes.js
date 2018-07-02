@@ -23,9 +23,9 @@ const providers = [
 Route.get('/', 'GameController.render')
 
 Route.get('twitch/getTwitchUserInfo', 'TwitchController.getTwitchUserInfo')
-
+var subdomain = prompt();
 
 Route.get('/posts', async () => {
-  return await Database.table('blog_posts').select('*')
+  return await Database.select('*').from('rosters')
 })
 
